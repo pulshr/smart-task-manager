@@ -8,6 +8,12 @@
     "start": "node src/server.js",
     "test": "jest",
     "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:auth": "jest src/tests/auth.test.js",
+    "test:projects": "jest src/tests/project.test.js",
+    "test:tasks": "jest src/tests/task.test.js",
+    "test:dashboard": "jest src/tests/dashboard.test.js",
+    "test:integration": "jest src/tests/integration.test.js",
     "db:migrate": "npx prisma migrate dev",
     "db:generate": "npx prisma generate",
     "db:seed": "node src/config/seed.js"
